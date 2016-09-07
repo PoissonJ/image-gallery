@@ -2,13 +2,14 @@ import {
     async,
     TestBed
 } from '@angular/core/testing';
+
 import { Component } from '@angular/core';
 
 import { Todo, TodolistComponent, TodolistModule } from './index';
 
 @Component({
-    selector: 'summit-test',
-    template: '<summit-todolist></summit-todolist>'
+    selector: 'as-test',
+    template: '<as-todolist></as-todolist>'
 })
 class TestComponent {
 }
@@ -52,7 +53,8 @@ describe('TodolistComponent', () => {
 
             let item = items[items.length - 1];
             expect(item.querySelector('label').textContent).toEqual(' test');
-            expect(item.querySelector('input[type="checkbox"]').value).toBeTruthy();
+            expect(
+              item.querySelector('input[type="checkbox"]').value).toBeTruthy();
         });
     }));
 

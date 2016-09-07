@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 import { CONSTANTS } from './shared';
 
 @Component({
-  selector: 'summit-main-app',
+  selector: 'as-main-app',
   templateUrl: 'app/app.html'
 })
 export class AppComponent {

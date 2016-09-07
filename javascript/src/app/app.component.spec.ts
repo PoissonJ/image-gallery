@@ -15,7 +15,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 
 @Component({
-    selector: 'summit-test-cmp',
+    selector: 'as-test-cmp',
     template: '<div class="title">Hello test</div>'
 })
 class TestRouterComponent {
