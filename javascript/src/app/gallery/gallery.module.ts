@@ -4,10 +4,10 @@ import { GalleryComponent } from './index';
 
 @NgModule({
   declarations: [
-      GalleryComponent
+    GalleryComponent
   ],
   exports: [
-      GalleryComponent
+    GalleryComponent
   ]
 })
 export class GalleryModule {

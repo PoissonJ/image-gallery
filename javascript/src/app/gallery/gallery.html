@@ -1,11 +1,11 @@
-<div class="imageBox col-lg-3 col-md-4 col-sm-6 col-xs-12">
-    <img class="img-responsive center-block" src="https://placekitten.com/500/500" alt="kitten"/>
+<div class="imageBox col-lg-5 col-md-7 col-sm-10 col-xs-12">
+    <img class="img-responsive center-block" src="{{ getCurrentImage().url }}" alt="kitten"/>
     <div class="topBar">
-        <div class="pull-left">Happy Kitten</div>
-        <i class="pull-right fa fa-chevron-circle-right" aria-hidden="true"></i>
-        <i class="pull-right fa fa-chevron-circle-left" aria-hidden="true"></i>
+        <div class="pull-left">{{ getCurrentImage().title }}</div>
+        <i (click)="getNextImage()" class="pull-right fa fa-chevron-circle-right" aria-hidden="true"></i>
+        <i (click)="getPreviousImage()" class="pull-right fa fa-chevron-circle-left" aria-hidden="true"></i>
     </div>
     <div class="bottomBar text-justify">
-        Image Caption: Lorem ipsum dolor sit amet, consectetur adipisicing elit
+        {{ getCurrentImage().caption }}
     </div>
 </div>

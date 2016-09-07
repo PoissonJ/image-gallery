@@ -1,5 +1,5 @@
 export const MAIN = {
-    APP: {
-        BRAND: 'Angular 2 Starter'
-    }
+  APP: {
+    BRAND: 'Image Gallery Widget Demo'
+  }
 };
