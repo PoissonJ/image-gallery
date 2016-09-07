@@ -3,24 +3,18 @@ h1 {
 }
 
 .imageBox {
-  /*overflow: hidden;*/
-  padding: 0;
-  background-image: url("https://placekitten.com/300/300");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+    background: #000;
+    overflow: hidden;
+    padding: 0;
+    display: table-cell;
 }
 
-.test {
-  background-image: url("https://placekitten.com/200/300");
-}
-
-.topBar {
+.imageBox .topBar {
     /* Positioning */
     display: inline-block;
     position: absolute;
     top: 0;
-    width: 99%;
-
+    width: 100%;
     /* Style */
     font-size: 30px;
     color: #fff;
@@ -29,7 +23,6 @@ h1 {
     vertical-align: middle;
     padding: 5px;
     line-height: normal;
-
     /* Animation */
     -webkit-transform: translateY(-100px);
     -ms-transform: translateY(-100px);
@@ -38,13 +31,13 @@ h1 {
     transition: all 0.2s 0.5s ease-in-out;
 }
 
-.bottomBar {
+.imageBox .bottomBar {
     /* Positioning */
     display: inline-block;
     text-decoration: none;
     position: absolute;
     bottom: 0;
-
+    width: 100%;
     /* Style */
     font-size: 15px;
     color: #fff;
@@ -52,7 +45,6 @@ h1 {
     background: rgba(0, 0, 0, 0.6);
     padding: 5px;
     line-height: normal;
-
     /* Animation */
     -webkit-transform: translateY(100px);
     -ms-transform: translateY(100px);
