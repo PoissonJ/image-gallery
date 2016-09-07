@@ -8,7 +8,7 @@ export const images: Object[] = [
     'url': 'https://placekitten.com/600/600',
     'title': 'Kitten With Yarn',
     'caption':
-    'Kittens love to play with balls of yarn. This toy can keep them' +
+    'Kittens love to play with balls of yarn. This toy can keep them ' +
     'busy for hours!'
   },
   {
