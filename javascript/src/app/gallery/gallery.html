@@ -1,5 +1,6 @@
 <div class="imageBox col-lg-5 col-md-7 col-sm-10 col-xs-12">
-    <img class="img-responsive center-block" src="{{ getCurrentImage().url }}" alt="kitten"/>
+    <img class="animated slideInRight img-responsive center-block" src="{{ getCurrentImage().url }}" alt="kitten"/>
+    <img *ngIf="hide" class="animated slideInRight img-responsive center-block" src="{{ getCurrentImage().url }}" alt="kitten"/>
     <div class="topBar">
         <div class="pull-left">{{ getCurrentImage().title }}</div>
         <i (click)="getNextImage()" class="pull-right fa fa-chevron-circle-right" aria-hidden="true"></i>

@@ -10,6 +10,7 @@ import { images } from './images';
   ]
 })
 export class GalleryComponent {
+  public hide: boolean = true;
   private images: Object[];
   private currentImage: Object;
   private imageCount;
@@ -21,6 +22,7 @@ export class GalleryComponent {
   }
 
   public getNextImage(): void {
+    this.hide = false;
     this.imageCount++;
 
     if (this.imageCount >= images.length) {
@@ -28,6 +30,7 @@ export class GalleryComponent {
     }
 
     this.currentImage = this.images[this.imageCount];
+    this.hide = false;
   }
 
   public getPreviousImage(): void {
