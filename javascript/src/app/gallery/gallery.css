@@ -1,3 +1,66 @@
-h4 {
-	color: gray;
+.imageBox {
+    background: #000;
+    overflow: hidden;
+    padding: 0;
+    display: table-cell;
+}
+
+.imageBox .topBar {
+    /* Positioning */
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    /* Style */
+    font-size: 30px;
+    color: #fff;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.6);
+    vertical-align: middle;
+    padding: 5px;
+    line-height: normal;
+    /* Animation */
+    -webkit-transform: translateY(-100px);
+    -ms-transform: translateY(-100px);
+    transform: translateY(-100px);
+    -webkit-transition: all 0.2s 0.5s ease-in-out;
+    transition: all 0.2s 0.5s ease-in-out;
+}
+
+.imageBox .bottomBar {
+    /* Positioning */
+    display: inline-block;
+    text-decoration: none;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Style */
+    font-size: 15px;
+    color: #fff;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 5px;
+    line-height: normal;
+    /* Animation */
+    -webkit-transform: translateY(100px);
+    -ms-transform: translateY(100px);
+    transform: translateY(100px);
+    -webkit-transition: all 0.2s 0.5s ease-in-out;
+    transition: all 0.2s 0.5s ease-in-out;
+}
+
+.imageBox:hover .topBar {
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+
+.imageBox:hover .bottomBar {
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
 }

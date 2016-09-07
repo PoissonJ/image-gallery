@@ -10,5 +10,5 @@ import { GalleryComponent } from './index';
       GalleryComponent
   ]
 })
-export class HomeModule {
+export class GalleryModule {
 }
